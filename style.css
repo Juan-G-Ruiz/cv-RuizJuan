@@ -1,0 +1,268 @@
+.img {
+    width: 250px;
+}
+
+   
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', -serif;
+}
+body{
+    background-color:cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background-color: antiquewhite;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    border-left: 50px solid antiquewhite;
+    border-right: 50px solid antiquewhite;
+}
+.container .top
+{
+ position: relative;
+ display: grid;
+ grid-template-columns: 1fr 2fr ;
+ padding: 40px;
+ padding-bottom: 0;
+}
+.container .top .imgBx
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .top .imgBx .box
+{
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    /**border-radius:50px ;*/
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.container .top .imgBx .box .img
+{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+.container .top .profilText
+{
+position: relative;
+padding: 50%;
+display: flex;
+align-items: center;
+}
+.container .top .profilText h3
+{
+font-size: 3em;
+letter-spacing: O.1em;
+line-height: 1.2em;
+font-weight: 600;
+color:black;
+}
+.container .top .profileText h3 span
+{
+position: relative;
+font-size: 0.8em;
+font-weight: 300;
+top: -10px;
+
+}
+
+.container .contenBox
+{
+position: relative;
+min-height: 500px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+padding: 0 40px 40px;
+
+}
+.container .contenBox h3
+{
+border-left: 4px solid yellow;
+padding-left: 10px;
+line-height:1em ;
+font-weight: 600;
+color: black;
+letter-spacing:  0.1em;
+margin-bottom: 20px;
+margin-top: 50px;
+}
+.container .contenBox ul
+{
+    position: relative;
+    margin: 10px 0;
+}
+.container .contenBox ul li
+{
+    list-style: none;
+    margin: 25px 0;
+    line-height: 1em;
+    color: black;
+    cursor: pointer;
+    display: flex;
+
+}
+.container .contenBox ul li ion-icon
+{
+    font-size: 1.2em;
+    margin-right: 10px;
+    
+}
+.container .contenBox ul.formacion li
+{
+flex-direction: column;
+margin: 25px 0;
+}
+h5
+{
+    color: blue;
+}
+h4
+{
+    color: black;
+    font-weight: 500;
+    margin: 5px 0;
+}
+h6
+{
+    color: darkblue;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.Idiomas li
+{
+    flex-direction: column;
+}
+.idiomas li span
+{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+.idiomas .percent
+{
+    position: relative;
+    width: 100%;
+    background: burlywood;
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+   
+}
+.idiomas .percent div
+{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+background: blue;
+}
+.container .contenBox ul.intereses
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.container .contenBox ul.intereses li
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.container .contenBox ul.intereses li .icon
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: blue;
+    color: aliceblue;
+    border-radius: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contenBox ul.intereses li .icon ion-icon
+{
+ color: white;
+ margin-right: 0;
+}
+p
+{
+    font-style: 300;
+
+}
+.rightSide
+{
+    padding-left: 40px;
+}
+.about.lenguajes .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+.about.lenguajes .box h4
+{
+    color: black;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.about.lenguajes .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: burlywood;
+    
+}
+.about.lenguajes .box .percent div
+{
+    position: absolute;
+    top: 10;
+    left: 0;
+    height: 100%;
+    background: blue ;
+}
+.habilidades .blandas .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.habilidades .blandas .box h4
+{
+        color: black;
+        font-weight: 500;
+        margin-bottom: 5px;
+} 
