@@ -1,6 +1,6 @@
-.img {
+/*.img {
     width: 250px;
-}
+}*/
 
    
 
@@ -12,24 +12,72 @@
     font-family: 'Oswald', -serif;
 }
 body{
-    background-color:cornflowerblue;
+    background-color: #00aae4;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
+     
 }
+.contenedor-header{
+    background-color: #00aae4;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: blue;
+    box-shadow: 2px 5px 5px 0px blue;
+}
+.nav-responsive{
+    background-color: blue;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* poner un marco*/
 .container{
-    position: relative;
+ /*   position: relative;
     width: 100%;
     max-width: 1000px;
     background-color: antiquewhite;
     margin: 50px;
     box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
     border-left: 50px solid antiquewhite;
-    border-right: 50px solid antiquewhite;
+    border-right: 50px solid antiquewhite;*/
 }
-.container .top
+.container .inicio
 {
  position: relative;
  display: grid;
@@ -37,39 +85,40 @@ body{
  padding: 40px;
  padding-bottom: 0;
 }
-.container .top .imgBx
+.container .inicio .imgCV
 {
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.container .top .imgBx .box
+.container .inicio .imgCV .caja
 {
     position: relative;
     width: 70%;
     min-width: 200px;
-    /**border-radius:50px ;*/
+    border-radius:50%;
     overflow: hidden;
     aspect-ratio: 1;
 }
-.container .top .imgBx .box .img
+.container .inicio .imgCV .caja .img
 {
 position: absolute;
 top: 0;
+left: 0;
 width: 100%;
 height: 100%;
 object-fit: cover;
 
 }
-.container .top .profilText
+.container .inicio .profileText
 {
 position: relative;
-padding: 50%;
+padding: 30%;
 display: flex;
 align-items: center;
 }
-.container .top .profilText h3
+.container .inicio .profileText h3
 {
 font-size: 3em;
 letter-spacing: O.1em;
@@ -77,7 +126,7 @@ line-height: 1.2em;
 font-weight: 600;
 color:black;
 }
-.container .top .profileText h3 span
+.container .inicio .profileText h3 span
 {
 position: relative;
 font-size: 0.8em;
@@ -164,7 +213,7 @@ h6
     position: relative;
     width: 100%;
     background: burlywood;
-    height: 10px;
+    height: 6px;
     margin-top: 15px;
     margin-bottom: 10px;
     display: block;
@@ -215,11 +264,11 @@ p
     font-style: 300;
 
 }
-.rightSide
+.ladoDerecho
 {
     padding-left: 40px;
 }
-.about.lenguajes .box
+.lenguajes .caja
 {
     position: relative;
     width: 100%;
@@ -229,13 +278,13 @@ p
     align-items: center;
 
 }
-.about.lenguajes .box h4
+.lenguajes .caja h4
 {
     color: black;
     font-weight: 500;
     margin-bottom: 5px;
 }
-.about.lenguajes .box .percent
+.lenguajes .caja .percent
 {
     position: relative;
     width: 100%;
@@ -243,7 +292,7 @@ p
     background: burlywood;
     
 }
-.about.lenguajes .box .percent div
+.lenguajes .caja .percent div
 {
     position: absolute;
     top: 10;
@@ -251,7 +300,7 @@ p
     height: 100%;
     background: blue ;
 }
-.habilidades .blandas .box
+.habilidades .blandas .caja
 {
     position: relative;
     width: 100%;
@@ -260,9 +309,14 @@ p
     justify-content: center;
     align-items: center;
 }
-.habilidades .blandas .box h4
+.habilidades .blandas .caja h4
 {
         color: black;
         font-weight: 500;
         margin-bottom: 5px;
 } 
+@media screen and(max-width:480px){
+    body{
+        background-color: #1CB698;
+    }
+}

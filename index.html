@@ -11,21 +11,47 @@
     <title>cv Ruiz Juan Gabriel</title>
 </head>
 <body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#inicio"></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#perfil" onclick="seleccionar()">PERFIL</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#formacion" onclick="seleccionar()">FORMACION</a></li>
+                    <li><a href="#idiomas" onclick="seleccionar()">IDIOMAS</a></li>
+                    <li><a href="#lenguajes" onclick="seleccionar()">LENGUAJES</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#intereses" onclick="seleccionar()">INTERESES</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
     <div class="container">
-        <div class="top"> 
-            <div  class="imgBx">
-                <div class="box">
-                    <img src="imagenes/cvjr.jpg" class="img">                 
+        <section id="inicio">
+        <div class="inicio"> 
+            <div  class="imgCV">
+                <div class="caja">
+                    <img src="imagenes/paracv.jpg" class="img">                 
                 </div>
             </div>
             <div class="profileText">
-                <h3>Ruiz<br>Juan<br>Gabriel<br><span>Desarrolador front-end </span>
+                <h3>Ruiz<br>Juan Gabriel<br><span>Devolper frontend trainee</span>
                 </h3>
             </div>
         </div>
+        </section>
         <div class="contenBox">
-            <div class="jeftSide">
+            <div class="ladoIzquierdo">
+               
             <h3>Informacion de Contacto</h3>
+            <section id="contacto">
             <ul>
                 <li>
                     <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
@@ -41,10 +67,12 @@
                 </li>
                 <li>
                     <span class="icon"><ion-icon name="location-outline"></ion-icon></span>
-                    <span class="text">Talcahuano, San nicolas (CABA)</span>
+                    <span class="text">Talcahuano, San Nicolas (CABA)</span>
                 </li>
             </ul>
-            <h3>Formacion</h3>
+               </section>
+               <section id="formacion">
+            <h3>Formación</h3>
             <ul class="formacion">
                 <li>
                     <h5>2022 - cursando</h5>
@@ -73,85 +101,102 @@
                     <h6>Argentina Programa 4.0</h6>
                 </li>
             </ul>
+        </section>
+            <section id="idiomas">
             <h3>Idiomas</h3>
             <ul class="idiomas">
                 <li>
-                    <span class="text">Ingles</span>
+                    <span class="text">Inglés</span>
                     <span class="percent">
                     <div style="width: 30%;"></div>
                     </span>
                 </li>
             </ul>
-            <h3>Intereses en hambito laboral y Desarrollo de software</h3>
+        </section>
+        <section id="intereses">
+            <h3>Intereses en ámbito laboral y Desarrollo de software</h3>
             <ul class="intereses">
                 <li><span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>Juegos</li>
                 <li><span class="icon"><ion-icon name="apps-outline"></ion-icon></span>Apps</li>
                 <li><span class="icon"><ion-icon name="earth-outline"></ion-icon></span>Paginas web</li>
                 <li><span class="icon"><ion-icon name="analytics-outline"></ion-icon></span>Analisis de Datos</li>
             </ul>
+            </section>
             </div>
-            <div class="rightSide">
-            <div class="about">
+            <div class="ladoDerecho">
+                <section id="perfil">
+            <div class="perfil">
                 <h3>Perfil</h3>
-                <p>Hola soy estudiante en la Tecnicatura en Desarrolo de Software y  estoy buscando mi primer empleo en el sector IT. Desde hace unos años estuve interesado en hambito de las nuvas tecnologias y a principio del 2022 me decidi a estudiar primero empese con unos cursos online hasta que empese a estudiar una tecnicatura la cual continuo actualmente, </p>
+                <p>Hola soy estudiante en la <strong>Tecnicatura Superior en Desarrollo de Software</strong> y estoy buscando mi primer empleo en el sector IT. Desde hace unos años estuve interesado en ámbito de la programación y a principio del 2022 me decidí a estudiar primero empecé con unos cursos online luego comencé a estudiar la Tecnicatura en Desarrollo de Software.<br>Actualmente me encuentro haciendo una formación en programación en <strong> Next Education - Alura Latam</strong> y otro de <strong>Ticamas Academy - Argentina Programa 4.0</strong> con enfoque en frontend. </p>
             </div>
-            <div class="about lenguajes">
+        </section>
+        <section id="lenguajes">
+            <div class="lenguajes">
                <h3>Habilidad en Lenguajes</h3> 
-               <div class="box">
+               <div class="caja">
                 <h4>Html</h4>
                 <span class="percent">
-                    <div style="width: 80%;"></div>
+                    <div style="width: 85%;"></div>
                 </span>
                </div>
-               <div class="box">
+               <div class="caja">
                 <h4>CSS</h4>
                 <span class="percent">
                     <div style="width: 70%;"></div>
                 </span>
                </div>
-               <div class="box">
+               <div class="caja">
                 <h4>Javascript</h4>
                 <span class="percent">
-                    <div style="width: 60%;"></div>
+                    <div style="width: 65%;"></div>
                 </span>
                </div>
-               <div class="box">
+               <div class="caja">
                 <h4>C#</h4>
                 <span class="percent">
-                    <div style="width: 60%;"></div>
+                    <div style="width: 65%;"></div>
                 </span>
                </div>
-               <div class="box">
+               <div class="caja">
                 <h4>SQLserver</h4>
                 <span class="percent">
                     <div style="width: 50%;"></div>
                 </span>
                </div>
+               <div class="caja">
+                <h4>Python</h4>
+                <span class="percent">
+                    <div style="width: 60%;"></div>
+                </span>
+               </div>
             </div>
+        </section>
+        <section id="habilidades">
             <div class="habilidades blandas">
                 <h3>Habilidades blandas</h3>
-                <div class="box">
+                <div class="caja">
                     <h4>Proactivo</h4>
                 </div>
-                <div class="box">
-                    <h4>Resolucion de problemas</h4>
+                <div class="caja">
+                    <h4>Resolutivo</h4>
                 </div>
-                <div class="box">
-                    <h4>Proactivo</h4>
+                <div class="caja">
+                    <h4>Toma de decisiones</h4>
                 </div>
-                <div class="box">
+                <div class="caja">
                     <h4>Adaptabilidad</h4>
                 </div>
-                <div class="box">
+                <div class="caja">
                     <h4>Trabajo en equipo</h4>
                 </div>
-                <div class="box">
+                <div class="caja">
                     <h4>Creatividad</h4>
                 </div>
-                <div class="box">
+                <div class="caja">
                     <h4>Responsabilidad</h4>
                 </div>
             </div>
+        </section>
         </div>
     </div>
     </div>
