@@ -12,6 +12,8 @@
     font-family: 'Oswald', -serif;
 }
 body{
+    padding-left: 50px;
+    font-size: 120%;
     background-color: #00aae4;
     display: flex;
     justify-content: center;
@@ -135,7 +137,7 @@ top: -10px;
 
 }
 
-.container .contenBox
+/*.container .contenBox
 {
 position: relative;
 min-height: 500px;
@@ -143,7 +145,7 @@ display: grid;
 grid-template-columns: 1fr 2fr;
 padding: 0 40px 40px;
 
-}
+}*/
 .container .contenBox h3
 {
 border-left: 4px solid yellow;
@@ -264,10 +266,7 @@ p
     font-style: 300;
 
 }
-.ladoDerecho
-{
-    padding-left: 40px;
-}
+
 .lenguajes .caja
 {
     position: relative;
